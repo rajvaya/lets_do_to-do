@@ -1,10 +1,10 @@
 import Todo from "./Todo";
 
-function ToDoList({ todos, setTodos }) {
+function ToDoList({ todos, setTodos ,filteredtodos }) {
   return (
     <div className="todo-container">
       <ul className="todo-list">
-        {todos.map((todo) => (
+        {filteredtodos.map((todo) => (
           <Todo key={todo.id} 
           text={todo.text} 
           todos={todos} 
